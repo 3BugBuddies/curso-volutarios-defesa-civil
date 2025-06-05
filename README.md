@@ -1,11 +1,15 @@
 # Projeto Global Solution
 
+Diante da crescente frequência e intensidade dos desastres naturais provocados pelas mudanças climáticas, fortalecer a capacidade de resposta das comunidades locais se torna uma prioridade estratégica para a Defesa Civil. A valorização da atuação local, governança descentralizada e fortalecimento da resiliência comunitária se alinham com os princípios da Política Nacional de Proteção e Defesa Civil (PNPDEC).
+Partindo disto, conseguimos encontrar uma oportunidade de atuação através de capacitações conduzidas pela Defesa Civil de cada município, para formar voluntários da população civil com conteúdos adaptados à realidade local com foco na gestão de riscos de desastres que tem cinco etapas fundamentais: prevenção, mitigação, preparação, resposta e recuperação.
+
 ## Objetivo do Projeto
 
 
 Nossa solução:
 
-1. 
+Com base nisso, a solução proposta consiste no desenvolvimento de uma plataforma que permita a criação, aplicação e gestão de cursos de capacitação de voluntários. A ferramenta visa apoiar municípios a criarem trilhas formativas básicas (com vídeos, textos e questionários), emitir certificados e contarem com voluntários aptos a atuarem em situações de emergência.
+Ao permitir que cada município gerencie suas próprias capacitações, a solução contribui para reduzir a dependência de iniciativas centralizadas e para acelerar a formação de voluntários preparados para a realidade local.
 
 ## Estrutura de Pastas e Arquivos
 
