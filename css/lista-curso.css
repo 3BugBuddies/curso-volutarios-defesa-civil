@@ -1,0 +1,320 @@
+@import url('./_variables.css');
+
+.container-modules {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modules {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.modules h2 {
+  color: var(--color-brand-blue);
+  text-align: center;
+  /* Centralizado para o título principal */
+  font-family: var(--font-family-base, 'Raleway'), sans-serif;
+  font-size: 2.5rem;
+  /* Aumentado para destaque */
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+  /* Ajuste para melhor legibilidade */
+  margin-bottom: var(--spacing-3);
+}
+
+.modules>p {
+  font-family: var(--font-family-base, 'Raleway'), sans-serif;
+  margin: 0 auto var(--spacing-5);
+  color: var(--cinza-medio);
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-relaxed);
+  text-align: center;
+  font-weight: var(--font-weight-normal);
+}
+
+.module-grid {
+  padding-top: var(--spacing-4);
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Padrão para mobile */
+  gap: 1.5rem;
+  /* Espaçamento entre os cards */
+  width: 100%;
+}
+
+.module-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--color-background-primary);
+  border-radius: 0.625rem;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2rem;
+  width: 100%;
+}
+
+.module-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-sm)
+}
+
+.module-image {
+  flex-shrink: 0;
+  width: 7.5rem;
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  /* Garante que a imagem não saia da borda */
+}
+
+.module-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* Garante que a imagem se ajuste sem cortar */
+}
+
+.module-content {
+  flex-grow: 1;
+  margin-left: 1.5rem;
+  /* Espaçamento entre imagem e conteúdo */
+  text-align: left;
+  /* Alinhamento do texto para a esquerda */
+}
+
+.module-title {
+  color: var(--color-brand-blue);
+  text-align: left;
+  /* Centralizado para o título principal */
+  font-family: var(--font-family-base, 'Raleway'), sans-serif;
+  font-weight: var(--font-weight-normal);
+  margin-top: var(--spacing-3);
+  margin-bottom: var(--spacing-1);
+}
+
+.module-description {
+  color: var(--cinza-medio);
+  text-align: left;
+  /* Centralizado para o título principal */
+  font-family: var(--font-family-base, 'Raleway'), sans-serif;
+  font-weight: var(--font-weight-normal);
+  margin: 0;
+  /* Remove margem padrão */
+}
+
+.module-footer {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
+  /* Alinha o botão à direita */
+  align-items: center;
+  /* Centraliza verticalmente o botão */
+  padding: 1rem;
+  /* Espaçamento à esquerda do footer */
+  margin-bottom: var(--spacing-4);
+  gap: 0.5rem;
+  /* Espaçamento entre o texto e o botão */
+}
+
+.module-button {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 0.3125rem;
+  padding: 0.625rem 1.25rem;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.module-button:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+.module-button.completed {
+  background-color: var(--color-secondary);
+  /* Cor para módulo completo */
+}
+
+.module-button.completed:hover {
+  background-color: var(--color-secondary-dark);
+  /* Cor hover para módulo completo */
+}
+
+/* Media Queries para Responsividade */
+
+/* Tablet e Telas Maiores (768px a 1024px) */
+@media (min-width: 768px) {
+  .module-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* 2 colunas, se couber */
+    gap: 1.5rem;
+  }
+
+  .module-card {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-4);
+    height: auto;
+  }
+
+  .module-image {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .module-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  .module-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+  }
+
+  .module-description {
+    font-size: var(--font-size-base);
+    text-align: left;
+  }
+
+  .module-button {
+    padding: 8px 15px;
+    width: 100%;
+  }
+
+  .module-footer {
+    flex-direction: column;
+    align-items: end;
+    margin: 0;
+  }
+
+  .module-lessons {
+    color: var(--color-gray-700);
+    font-family: var(--font-family-base, 'Raleway'), sans-serif;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-xs);
+  }
+}
+
+/* Desktop e Telas Maiores (acima de 1024px) */
+@media (min-width: 1024px) {
+  .module-grid {
+    grid-template-columns: 1fr;
+    max-width: 56.25rem;
+  }
+
+  .module-card {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: var(--spacing-6);
+    margin-top: var(--spacing-6);
+    gap: var(--spacing-6);
+  }
+
+  .module-image {
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-bottom: 0;
+  }
+
+  .module-content {
+    flex-grow: 1;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .module-title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    text-align: left;
+  }
+
+  .module-description {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    margin: 0;
+    text-align: left;
+  }
+
+  .module-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+
+  .module-button {
+    width: auto;
+  }
+}
+
+/* Telas muito pequenas (abaixo de 480px) */
+@media (max-width: 480px) {
+  .module-content {
+    margin-left: 0;
+  }
+
+  .module-card {
+    flex-direction: column;
+    padding: var(--spacing-4);
+    margin-top: var(--spacing-4);
+    justify-content: center;
+    display: flex;
+    gap: var(--spacing-3);
+  }
+
+  .module-image {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .module-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+  }
+
+  .module-description {
+    font-size: var(--font-size-base);
+    text-align: left;
+  }
+
+  .module-button {
+    padding: 8px 15px;
+    width: 100%;
+  }
+
+  .module-footer {
+    flex-direction: column;
+    align-items: end;
+    margin: 0;
+  }
+
+  .module-lessons {
+    color: var(--color-gray-700);
+    font-family: var(--font-family-base, 'Raleway'), sans-serif;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-xs);
+  }
+
+}
