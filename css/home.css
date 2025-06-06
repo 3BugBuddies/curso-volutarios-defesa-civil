@@ -1,0 +1,257 @@
+@import url('./_variables.css');
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+/* Section Styles */
+section {
+  padding: var(--spacing-16) 0;
+}
+
+.section-header {
+  margin-bottom: var(--spacing-12);
+}
+
+.section-header h2 {
+  margin-bottom: var(--spacing-4);
+}
+
+.section-header p {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  max-width: 800px;
+  margin: 0 auto var(--spacing-8);
+}
+
+.section-header.center {
+  text-align: center;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: var(--spacing-3) var(--spacing-6);
+  border-radius: var(--border-radius-md);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: none;
+  outline: none;
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-secondary-dark);
+  color: var(--color-white);
+}
+
+.btn-light {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.btn-light:hover {
+  background-color: var(--color-background-alt);
+  color: var(--color-primary-dark);
+}
+
+/* Utilities */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn var(--transition-normal) forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all var(--transition-normal);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: var(--spacing-6);
+  right: var(--spacing-6);
+  z-index: var(--z-overlay);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-fast);
+}
+
+.scroll-to-top button:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-5px);
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-2xl);
+  }
+
+  h3 {
+    font-size: var(--font-size-xl);
+  }
+
+  section {
+    padding: var(--spacing-12) 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: var(--font-size-2xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-xl);
+  }
+
+  section {
+    padding: var(--spacing-8) 0;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: var(--spacing-4);
+  }
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(37, 99, 235, 0.8) 100%), url('../img/equipe-diversificada-empilhando-suas-maos.jpg') no-repeat center center / cover;
+  color: var(--color-white);
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: var(--spacing-16);
+}
+
+.hero-content h1 {
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  margin-bottom: var(--spacing-6);
+  line-height: 1.1;
+}
+
+.hero-content h1 span {
+  color: var(--color-secondary-light);
+}
+
+.hero-content p {
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  margin-bottom: var(--spacing-8);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: var(--spacing-4);
+  justify-content: center;
+}
+
+
+/* Media Queries */
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: var(--font-size-4xl);
+  }
+
+  .hero-content p {
+    font-size: var(--font-size-lg);
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .module-grid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: var(--font-size-3xl);
+  }
+}
