@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elo IMREA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Courgette&family=Gloria+Hallelujah&family=Lobster&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/info-contato.css" />
+</head>
+
+<body>
+    <header>
+        <div id="cabecalho">
+            <!-- <a href="#" class="abrirmenu" onclick="abrir();">Abrir Menu</a> -->
+            <a href="#" class="abrirmenu" onclick="abrir();"> &equiv; </a>
+            <div id="superior">
+                <div id="imagem">
+                    <img src="img/logo_sedec_circular.png" alt="logomarca defesa civil" />
+                </div>
+
+                <nav>
+                    <a href="#" class="fecharmenu" onclick="fechar();"> &times; </a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="quemsomos.html">Integrantes</a></li>
+                         <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="infoecontato.html">Info e contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main" role="main">
+        <div class="content">
+            <section class="faq-section">
+                <h2>Perguntas mais comuns</h2>
+
+                <details>
+                    <summary>O curso de formação é obrigatório?</summary>
+                    <p>
+                        Sim. A capacitação é etapa fundamental para que o(a) voluntário(a) possa atuar de forma segura e eficaz. O curso oferece os conhecimentos teóricos e práticos necessários para o desempenho das atividades de Defesa Civil.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Como serei acionado(a) em caso de emergência?</summary>
+                    <p>
+                      O acionamento será feito pela Coordenadoria Municipal de Defesa Civil, geralmente por meio de grupos em aplicativos de mensagens, contato telefônico ou e-mail cadastrado. Mantenha sempre seus dados de contato atualizados.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Receberei algum certificado ao final do curso?</summary>
+                    <p>
+                     Sim. Ao concluir o curso com a frequência mínima exigida (geralmente 70%), você receberá um certificado que o(a) habilitará como voluntário(a) da Defesa Civil municipal.
+                    </p>
+                </details>
+
+                   <details>
+                    <summary>Sou obrigado(a) a atender a todos os chamados?</summary>
+                    <p>
+                     O trabalho voluntário é, por definição, uma atividade não remunerada e baseada na sua disponibilidade. No entanto, ao se comprometer com a Defesa Civil, esperamos contar com seu apoio, especialmente em situações de emergência. A comunicação sobre sua disponibilidade é fundamental.
+                    </p>
+                </details>
+
+            </section>
+            <section class="form-section">
+                <div>
+                    <h2>Fale Conosco</h2>
+                    <p class="description">Dúvidas, elogios, críticas e conselhos?
+                        Entre em contato, estamos aqui para ouvir você! </p>
+
+                    <form id="contactForm" class="contact-form" onsubmit="handleSubmit(event)" novalidate
+                        aria-label="formulário de contato">
+                        <div class="form-group">
+                            <label for="name" id="nameLabel">Nome<span class="required"
+                                    aria-label="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Qual é o seu nome?" required
+                                aria-required="true" aria-labelledby="nameLabel" aria-describedby="nameError">
+                            <span class="error-message" id="nameError" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" id="emailLabel">Email<span class="required"
+                                    aria-label="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Qual é o seu email?" required
+                                aria-required="true" aria-labelledby="emailLabel" aria-describedby="emailError">
+                            <span class="error-message" id="emailError" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" id="phoneLabel">Numero de Telefone<span class="required"
+                                    aria-label="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="Qual o seu telefone?" required
+                                aria-required="true" aria-labelledby="phoneLabel" aria-describedby="phoneError">
+                            <span class="error-message" id="phoneError" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" id="subjectLabel">Tema do Assunto<span class="required"
+                                    aria-label="required">*</span></label>
+                            <input type="text" id="subject" name="subject" placeholder="Qual o motivo do contato?"
+                                required aria-required="true" aria-labelledby="subjectLabel"
+                                aria-describedby="subjectError">
+                            <span class="error-message" id="subjectError" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" id="messageLabel">Mensagem<span class="required"
+                                    aria-label="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" placeholder="Como podemos lhe ajudar?"
+                                required aria-required="true" aria-labelledby="messageLabel"
+                                aria-describedby="messageError"></textarea>
+                            <span class="error-message" id="messageError" role="alert"></span>
+                        </div>
+
+                        <button type="submit" class="submit-button" aria-label="Enviar formulário de contato">
+                            <span class="button-text">Enviar</span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    </div>
+
+    <div id="successMessage" class="success-message hidden" role="dialog" aria-labelledby="successTitle"
+        aria-modal="true">
+        <div class="success-content">
+            <div class="success-icon" aria-hidden="true">✓</div>
+            <h2 id="successTitle">Obrigada!</h2>
+            <p>Sua mensagem foi enviada com sucesso para equipe ELO. Entraremos em contato em breve!</p>
+            <button onclick="resetForm()" class="submit-button"
+                aria-label="Feche a mensagem de sucesso">Fechar</button>
+        </div>
+    </div>
+
+<!-- ----------------FOOTER------------------ -->
+    <footer>
+      <div id="logo-links">
+        <div id="logo-sugestao-azul">
+          <nav>
+            <ul>
+              <li>
+                <a href="index.html">
+                  <img
+                    id="logo-sugestao-azul"
+                    src="img/logo-sugestao-azul.png"
+                    alt="logotipo-sugestao-azul"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="footer-links">
+          <nav>
+            <ul>
+         <li><a href="index.html">Home</a></li>
+              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="infoecontato.html">Info e contato</a></li>
+              <li><a href="quemsomos.html">Integrantes</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div id="redes">
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/3BugBuddies/curso-volutarios-defesa-civil"
+                target="_blank"
+                ><img src="img/icon-github-logo.svg" alt="logotipo-do-github"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="direitos">
+        <p>&copy; 2025. Todos direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script/menu.js"></script>
+    <script src="script/info-contato.js"></script>
+</body>
+
+</html>
