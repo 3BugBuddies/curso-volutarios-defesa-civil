@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escola de Voluntários da Defesa Civil</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Courgette&family=Gloria+Hallelujah&family=Lobster&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/quiz.css" />
+</head>
+
+<body>
+  <header>
+    <div id="cabecalho">
+      <a href="#" class="abrirmenu" onclick="abrir();"> &equiv; </a>
+
+      <div id="superior">
+        <div id="imagem">
+          <img src="img/logo_sedec_circular.png" alt="logomarca defesa civil" />
+        </div>
+
+        <nav>
+          <a href="#" class="fecharmenu" onclick="fechar();"> &times; </a>
+          <ul>
+         <li><a href="index.html">Home</a></li>
+              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="infoecontato.html">Info e contato</a></li>
+              <li><a href="quemsomos.html">Integrantes</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ------------------HEADER------------------ -->
+
+
+  <section class="quiz-header">
+    <div class="container">
+      <h2 id="quiz-title">Avaliação do Módulo</h2>
+      <p>Teste seus conhecimentos sobre o material abordado neste módulo.</p>
+    </div>
+  </section>
+
+  <section class="quiz-content">
+    <div class="container">
+      <div id="quiz-instructions" class="quiz-instructions">
+        <h3>Instruções:</h3>
+        <ul>
+          <li>Este questionário contém perguntas de múltipla escolha.</li>
+          <li>Selecione a melhor resposta para cada pergunta.</li>
+          <li>
+            Você precisa obter pelo menos 70% para ser aprovado(a) e receber seu
+            certificado.
+          </li>
+          <li>Você pode refazer o questionário se necessário.</li>
+        </ul>
+        <button id="start-quiz" class="btn primary">Iniciar Questionário</button>
+      </div>
+
+      <div id="quiz-container" class="quiz-container hidden">
+      </div>
+
+      <div id="quiz-results" class="quiz-results hidden">
+        <h3>Resultados do Questionário</h3>
+        <div class="score-container">
+          <div class="score-circle">
+            <span id="score-percentage">0%</span>
+          </div>
+          <p>Você acertou <span id="score-text">0/0</span></p>
+        </div>
+        <div id="pass-message" class="pass-message hidden">
+          <p>Parabéns! Você foi aprovado(a) no questionário.</p>
+          <button id="view-certificate" class="btn primary">
+            Visualizar Certificado
+          </button>
+        </div>
+        <div id="fail-message" class="fail-message hidden">
+          <p>
+            Você não foi aprovado(a) no questionário desta vez. Revise o material e tente
+            novamente.
+          </p>
+          <button id="retry-quiz" class="btn secondary">Tentar Novamente</button>
+          <button id="back-to-module" class="btn primary">
+            Voltar ao Módulo
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ----------------FOOTER------------------ -->
+  <footer>
+    <div id="logo-links">
+      <div id="logo-sugestao-azul">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">
+                <img id="logo-sugestao-azul" src="img/defesa_civil_png.png" alt="logomarca defesa civil" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="footer-links">
+        <nav>
+          <ul>
+            <li><a href="quemsomos.html">Integrantes</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="infoecontato.html">Info e contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div id="redes">
+      <nav>
+        <ul>
+          <li>
+            <a href="https://github.com/3BugBuddies/curso-volutarios-defesa-civil" target="_blank"><img
+                src="img/icon-github-logo.svg" alt="logotipo-do-github" /></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="direitos">
+      <p>&copy; 2025. Todos direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script/data.js"></script>
+  <script src="script/utils.js"></script>
+  <script src="script/quiz.js"></script>
+</body>
+
+</html>
