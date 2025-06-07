@@ -15,7 +15,7 @@
 
 /* Lesson Content */
 .lesson-content {
-  padding: var(--spacing-5) 0;
+  padding: var(--spacing-12);
 }
 
 .video-container {
@@ -41,7 +41,7 @@
 
 .lesson-text {
   background-color: var(--color-background-primary);
-  padding: var(--spacing-4);
+  padding: var(--spacing-8);
   border-radius: var(--border-radius-md);
   box-shadow: var(--box-shadow-md);
   margin-bottom: var(--spacing-4);
@@ -194,10 +194,46 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+/* Lesson Content */
+.lesson-content {
+  padding: var(--spacing-4);
+}
+
+.lesson-header {
+  background-color: var(--color-brand-blue);
+  text-align: center;
+  padding: var(--spacing-4) 0;
+}
+
+.lesson-header h2 {
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-2);
+}
+
+.lesson-text {
+  background-color: var(--color-background-primary);
+  padding: var(--spacing-6);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow-md);
+  margin-bottom: var(--spacing-4);
+}
+
+.lesson-text h3 {
+  margin-top: var(--spacing-4);
+  margin-bottom: var(--spacing-3);
+  font-size: var(--font-size-lg);
+}
+
+.lesson-text p {
+  margin-bottom: var(--spacing-3);
+  font-size: var(--font-size-base);
+}
+
   .lesson-navigation {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: var(--spacing-3);
-    padding: var(--spacing-3);
+    padding:  var(--spacing-3) 0;
 
   }
   

@@ -94,7 +94,7 @@ function handleSubmit(event) {
 
         // Disable button and show loading state
         submitButton.disabled = true;
-        buttonText.textContent = 'Sending...';
+        buttonText.textContent = 'Enviando...';
         submitButton.setAttribute('aria-label', 'enviando sua mensagem...');
 
         // Simulate form submission
@@ -102,7 +102,7 @@ function handleSubmit(event) {
             const successMessage = document.getElementById('successMessage');
             successMessage.classList.remove('hidden');
             submitButton.disabled = false;
-            buttonText.textContent = 'Send Message';
+            buttonText.textContent = 'Enviar Mensagem';
             submitButton.setAttribute('aria-label', 'submeter sua mensagem');
             event.target.reset();
 
