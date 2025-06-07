@@ -34,10 +34,10 @@
   font-family: var(--font-family-base, 'Raleway'), sans-serif;
   margin: 0 auto var(--spacing-5);
   color: var(--cinza-medio);
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-3xl);
   line-height: var(--line-height-relaxed);
   text-align: center;
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
 }
 
 .module-grid {
@@ -300,7 +300,7 @@
   }
 
   .module-button {
-    padding: 8px 15px;
+    padding: 0.5rem 0.9375rem;
     width: 100%;
   }
 

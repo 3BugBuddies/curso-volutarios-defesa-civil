@@ -53,6 +53,7 @@
   --color-background-primary: #ffffff; /* Default white background */
   --color-background-alt: #f9fafb; /* Lighter alternative background */
   --color-background-dark: #111827; /* Dark background */
+  --color-background-baby-blue: #adcde6;
   --color-background-light-blue: #f5f8ff; /* Specific light blue background */
   --color-background-hero: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, var(--color-primary) 100%); /* Hero section background */
 
