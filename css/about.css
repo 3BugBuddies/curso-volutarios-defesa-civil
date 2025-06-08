@@ -1,0 +1,14 @@
+@import url('./_variables.css');
+
+.about-section {
+  padding: var(--spacing-10);
+}
+
+
+.about-text {
+  background-color: var(--color-background-primary);
+  padding: var(--spacing-8);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow-md);
+  margin-bottom: var(--spacing-4);
+}

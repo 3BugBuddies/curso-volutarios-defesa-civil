@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>+Voluntários</title>
 
@@ -21,8 +22,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/lesson.css" />
-    <link rel="stylesheet" href="css/main.css" />
+     <link rel="stylesheet" href="css/about.css" />
   </head>
 
   <body>
@@ -39,7 +39,6 @@
             <a href="#" class="fecharmenu" onclick="fechar();"> &times; </a>
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">Sobre</a></li>
               <li><a href="cursos.html">Cursos</a></li>
               <li><a href="infoecontato.html">Info e contato</a></li>
               <li><a href="quemsomos.html">Integrantes</a></li>
@@ -48,38 +47,44 @@
         </div>
       </div>
     </header>
-
     <main>
-      <section class="lesson-header">
+      <!-- Team Section -->
+      <section class="about-section">
         <div class="container">
-          <h2 id="module-title">Carregando...</h2>
-        </div>
-      </section>
+          <div class="about-text">
+  
+            <h2>Sobre o Projeto +Voluntários</h2>
 
-      <section class="lesson-content">
-        <div class="container">
-          <div class="video-container">
-            <div class="video-wrapper">
-              <iframe
-                id="lesson-video"
-                src=""
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-
-          <div class="lesson-text" id="lesson-text"></div>
-
-          <div class="lesson-navigation">
-            <button id="previous-lesson" class="btn secondary">Voltar</button>
-            <button id="next-lesson" class="btn primary">Próximo</button>
+            <p>
+              Diante da crescente frequência e intensidade dos desastres
+              naturais provocados pelas mudanças climáticas, fortalecer a
+              capacidade de resposta das comunidades locais se torna uma
+              prioridade estratégica para a Defesa Civil. A valorização da
+              atuação local, governança descentralizada e fortalecimento da
+              resiliência comunitária se alinham com os princípios da Política
+              Nacional de Proteção e Defesa Civil (PNPDEC). Partindo disto,
+              conseguimos encontrar uma oportunidade de atuação através de
+              capacitações conduzidas pela Defesa Civil de cada município, para
+              formar voluntários da população civil com conteúdos adaptados à
+              realidade local com foco na gestão de riscos de desastres que tem
+              cinco etapas fundamentais: prevenção, mitigação, preparação,
+              resposta e recuperação. <br/>
+          
+              <br/>Com base nisso, a solução proposta consiste no desenvolvimento de uma
+              plataforma que permita a criação, aplicação e gestão de cursos de
+              capacitação de voluntários. A ferramenta visa apoiar municípios a
+              criarem trilhas formativas básicas (com vídeos, textos e
+              questionários), emitir certificados e contarem com voluntários
+              aptos a atuarem em situações de emergência. Ao permitir que cada
+              município gerencie suas próprias capacitações, a solução contribui
+              para reduzir a dependência de iniciativas centralizadas e para
+              acelerar a formação de voluntários preparados para a realidade
+              local.
+            </p>
           </div>
         </div>
       </section>
     </main>
-
     <!-- ----------------FOOTER------------------ -->
     <footer>
       <div id="logo-links">
@@ -127,9 +132,6 @@
       </div>
     </footer>
 
-    <script src="script/data.js"></script>
-    <script src="script/utils.js"></script>
-    <script src="script/lesson.js"></script>
     <script src="script/menu.js"></script>
   </body>
 </html>
