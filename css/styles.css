@@ -15,6 +15,7 @@ body {
   line-height: 1.5;
   color: var(--color-text-light);
   background: var(--color-background-baby-blue);
+
 }
 
 /* Typography */
@@ -269,10 +270,8 @@ footer #redes nav ul li a img {
 
   #imagem {
     display: flex;
-    width: 8rem;
-    height: 8rem;
-    top: -1.875rem;
-    left: -0.625rem;
+    width: 5.5rem;
+    height: 5.5rem;
     z-index: 10000;
     position: absolute;
   }
