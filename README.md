@@ -15,6 +15,39 @@ Ao permitir que cada município gerencie suas próprias capacitações, a soluç
 
 O projeto é organizado nas seguintes pastas e arquivos:
 
+```
+/
+|-- css/
+|   |-- styles.css
+|   |-- about.css
+|   |-- home.css
+|   |-- lista-curso.css
+|   |-- info-contato.css
+|   |-- quem-somos.css
+|   |-- lesson.css
+|   |-- main.css
+|   |-- quiz.css
+|   `-- certificate.css
+|-- img/
+|-- script/
+|   |-- data.js
+|   |-- utils.js
+|   |-- lista-curso.js
+|   |-- menu.js
+|   |-- info-contato.js
+|   |-- lesson.js
+|   |-- quiz.js
+|   `-- certificate.js
+|-- index.html
+|-- about.html
+|-- cursos.html
+|-- infoecontato.html
+|-- quemsomos.html
+|-- lesson.html
+|-- quiz.html
+|-- certificate.html
+`-- README.md
+````
 
 ## Tecnologia Utilizada
 
