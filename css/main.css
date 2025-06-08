@@ -11,10 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+
 
 main {
   flex: 1;

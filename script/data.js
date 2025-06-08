@@ -125,7 +125,7 @@ const courseData = {
         {
           id: 1,
           title: "Noções Básicas de Primeiros Socorros",
-          videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Mantenha a URL do vídeo
+          videoId: "Zy8nFO-rz2M", // Mantenha a URL do vídeo
           content: `
             <h3>Princípios de Primeiros Socorros</h3>
             <p>Primeiros socorros é a assistência imediata prestada a alguém que sofreu uma lesão ou doença até a chegada de ajuda profissional. Os objetivos primários dos primeiros socorros são:</p>
@@ -160,7 +160,7 @@ const courseData = {
         {
           id: 2,
           title: "RCP e Manejo de Engasgos",
-          videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Mantenha a URL do vídeo
+          videoId: "nCNJOOyMbVM", // Mantenha a URL do vídeo
           content: `
             <h3>Noções Básicas de RCP em Adultos</h3>
             <p>Se você encontrar um adulto inconsciente que não está respirando normalmente:</p>
@@ -203,7 +203,7 @@ const courseData = {
         {
           id: 3,
           title: "Tratamento de Lesões e Feridas",
-          videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Mantenha a URL do vídeo
+          videoId: "Zy8nFO-rz2M", // Mantenha a URL do vídeo
           content: `
             <h3>Controle de Hemorragias</h3>
             <p>Sangramento grave pode ser fatal se não for controlado rapidamente:</p>

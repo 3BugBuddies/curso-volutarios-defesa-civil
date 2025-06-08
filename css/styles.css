@@ -150,11 +150,11 @@ footer {
 footer #logo-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #logo-links nav ul {
@@ -165,22 +165,20 @@ footer #direitos {
   flex: 1;
   color: var(--color-text-primary);
   font-family: var(--font-family-base);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-sm);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1rem !important;
 }
 
 footer #logo-sugestao-azul {
-  width: 3.75rem;
-  height: 3.75rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 #footer-links nav {
   flex: 2;
   text-align: center;
-  padding-top: var(--spacing-6);
 }
 
 #footer-links nav ul {
@@ -200,7 +198,7 @@ footer #logo-sugestao-azul {
   text-decoration: none;
   color: var(--color-text-primary);
   font-family: var(--font-family-base);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
 }
@@ -208,7 +206,7 @@ footer #logo-sugestao-azul {
 footer #redes {
   flex: 1;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -225,8 +223,8 @@ footer #redes nav ul li {
 }
 
 footer #redes nav ul li a img {
-  width: 3rem;
-  height: 3rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -271,8 +269,8 @@ footer #redes nav ul li a img {
 
   #imagem {
     display: flex;
-    width: 9.375rem;
-    height: 9.375rem;
+    width: 8rem;
+    height: 8rem;
     top: -1.875rem;
     left: -0.625rem;
     z-index: 10000;
@@ -397,7 +395,8 @@ footer #redes nav ul li a img {
     justify-content: center;
     align-items: center;
     justify-content: center;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem 0 1rem;
+    margin: 0;
   }
 
   #logo-links nav ul {
@@ -416,22 +415,25 @@ footer #redes nav ul li a img {
   }
 
   footer #logo-sugestao-azul {
-    width: 3.125rem;
-    height: 3.125rem;
+    width: 5rem;
+    height: 5rem;
   }
 
   #footer-links nav {
     flex: 2;
     text-align: center;
-    padding-top: 1rem;
+    flex-direction: column;
   }
 
   #footer-links nav ul {
     list-style: none;
+     display: flex;
+    flex-direction: column;
   }
 
   #footer-links nav ul li {
     display: inline-block;
+    padding-top: 0;
   }
 
   #superior nav ul li:hover {
@@ -450,8 +452,8 @@ footer #redes nav ul li a img {
   footer #redes {
     flex: 1;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: end;
   }
 
   footer #redes nav {
@@ -463,7 +465,7 @@ footer #redes nav ul li a img {
   }
 
   footer #redes nav ul li {
-    display: inline-block;
+    display: flex;
   }
 
   footer #redes nav ul li a img {

@@ -19,18 +19,15 @@
 .modules h2 {
   color: var(--color-brand-blue);
   text-align: center;
-  /* Centralizado para o título principal */
   font-family: var(--font-family-base, 'Raleway'), sans-serif;
-  font-size: 2.5rem;
-  /* Aumentado para destaque */
+  font-size: var(--font-size-4xl);
   font-style: normal;
   font-weight: var(--font-weight-bold);
   line-height: 1.2;
-  /* Ajuste para melhor legibilidade */
   margin-bottom: var(--spacing-3);
 }
 
-.modules>p {
+.modules p {
   font-family: var(--font-family-base, 'Raleway'), sans-serif;
   margin: 0 auto var(--spacing-5);
   color: var(--cinza-medio);
@@ -39,6 +36,9 @@
   text-align: center;
   font-weight: var(--font-weight-bold);
 }
+
+
+
 
 .module-grid {
   padding-top: var(--spacing-4);
@@ -162,7 +162,6 @@
 @media (min-width: 768px) {
   .module-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* 2 colunas, se couber */
     gap: 1.5rem;
   }
 
@@ -171,6 +170,20 @@
     text-align: center;
     padding: var(--spacing-4);
     height: auto;
+  }
+
+    .modules p {
+    font-family: var(--font-family-base);
+    margin: 0 auto var(--spacing-4);
+    color: var(--color-brand-blue);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    text-align: left;
+  }
+
+  .module-grid p {
+    color: var(--color-cinza-medio);
+    font-weight: var(--font-weight-normal);
   }
 
   .module-image {
@@ -186,7 +199,7 @@
   .module-title {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);
-    text-align: center;
+    text-align: left;
   }
 
   .module-description {
@@ -229,6 +242,8 @@
     gap: var(--spacing-6);
   }
 
+
+
   .module-image {
     width: 7.5rem;
     height: 7.5rem;
@@ -247,7 +262,7 @@
     text-align: left;
   }
 
-  .module-description {
+  .module-description  {
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-normal);
     margin: 0;
@@ -274,6 +289,30 @@
     margin-left: 0;
   }
 
+  .modules h2 {
+    color: var(--color-brand-blue);
+    text-align: center;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-3);
+  }
+
+  .modules p {
+    font-family: var(--font-family-base);
+    margin: 0 auto var(--spacing-4);
+    color: var(--color-brand-blue);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+  }
+
+  .module-grid p {
+    color: var(--color-cinza-medio);
+    font-weight: var(--font-weight-normal);
+  }
+
+
   .module-card {
     flex-direction: column;
     padding: var(--spacing-4);
@@ -281,6 +320,7 @@
     justify-content: center;
     display: flex;
     gap: var(--spacing-3);
+    border-radius: 0;
   }
 
   .module-image {

@@ -1,4 +1,11 @@
 @import url('./_variables.css');
+
+@media print {
+  @page {
+    size: landscape;
+  }
+}
+
 /* Certificate Header */
 .certificate-header {
   background-color: var(--color-brand-blue);
@@ -28,7 +35,7 @@
 }
 
 .access-error h3 {
-  color: var(--error);
+  color: var(--color-error);
   margin-bottom: var(--spacing-3);
 }
 
@@ -44,7 +51,7 @@
 /* Certificate Styling */
 .certificate {
   background-color: var(--color-background-primary);
-  border: 10px solid var(--primary-light);
+  border: 10px solid var(--color-brand-blue);
   border-radius: var(--border-radius-md);
   box-shadow: var(--box-shadow-lg);
   padding: var(--spacing-3);
@@ -59,8 +66,8 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 20px;
-  background: linear-gradient(to right, var(--primary), var(--primary-light), var(--primary), var(--primary-light));
+  height: 10px;
+  background: linear-gradient(to right, var(--color-background-baby-blue), var(--color-primary-light), var(--color-brand-blue), var(--color-primary-light));
 }
 
 .certificate-footer-decoration {
@@ -68,14 +75,14 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 20px;
-  background: linear-gradient(to right, var(--primary), var(--primary-light), var(--primary), var(--primary-light));
+  height: 10px;
+  background: linear-gradient(to right, var(--color-background-baby-blue), var(--color-primary-light), var(--color-brand-blue), var(--color-primary-light));
 }
 
 .certificate-content-inner {
-  border: 2px solid var(--color-background-dark);
+  border: 10px solid var(--color-background-baby-blue);
   border-radius: var(--border-radius-sm);
-  padding: var(--spacing-5);
+  padding: var(--spacing-2);
   height: calc(100% - 40px);
   display: flex;
   flex-direction: column;
@@ -93,7 +100,7 @@
   transform: translate(-50%, -50%);
   width: 80%;
   height: 80%;
-  background-image: url('../assets/logo.svg');
+  background-image: url('../img/31.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -102,15 +109,23 @@
 }
 
 .certificate-logo {
-  margin-bottom: var(--spacing-3);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.certificate-logo img {
-  height: 60px;
+#logo-volunteer {
+  height: 130px;
+  width: 130px;
+}
+
+#logo-defesa-civil {
+  height: 90px;
+  width: 90px;
 }
 
 .certificate-title {
-  font-size: 2rem;
+  font-family: var(--font-size-6xl);
   color: var(--color-primary-dark);
   margin-bottom: var(--spacing-3);
   text-transform: uppercase;
@@ -127,8 +142,7 @@
   font-size: 1.75rem;
   color: var(--color-primary);
   margin: var(--spacing-2) 0;
-  font-family: 'Segoe UI', 'Palatino Linotype', serif;
-  font-style: italic;
+  font-family: var(--font-size-xl);
   border-bottom: 1px solid var(--color-gray-300);
   padding-bottom: var(--spacing-1);
   min-width: 300px;
@@ -225,8 +239,13 @@
   white-space: nowrap;
 }
 
-#download-certificate, #certificate-name {
-  background-color: var(--color-secondary-light);
+
+#certificate-name {
+  background-color: var(--color-background-primary);
+}
+
+#download-certificate {
+  background-color: var(--color-secondary);
 }
 
 #download-certificate:hover {
@@ -234,10 +253,10 @@
 }
 
 #certificate-name:hover {
-  background-color: var(--color-secondary-dark);
+  background-color: var(--color-background-primary);
 }
 
-.btn:hover{
+.btn:hover {
   background-color: var(--color-primary-dark);
 }
 
@@ -246,11 +265,12 @@
   body * {
     visibility: hidden;
   }
-  
-  .certificate, .certificate * {
+
+  .certificate,
+  .certificate * {
     visibility: visible;
   }
-  
+
   .certificate {
     position: absolute;
     left: 0;
@@ -261,12 +281,12 @@
     border: none;
     padding: 0;
   }
-  
+
   .certificate-content-inner {
     border: 5px double #000;
     padding: 50px;
   }
-  
+
   .certificate-header-decoration,
   .certificate-footer-decoration {
     display: none;
@@ -278,28 +298,29 @@
   .certificate {
     min-height: 31.25rem;
   }
+
   .certificate-header h2 {
-  color: var(--color-white);
-  font-size: var(--font-size-xl);
-}
-  
+    color: var(--color-white);
+    font-size: var(--font-size-xl);
+  }
+
   .certificate-title {
     font-size: var(--font-size-2xl);
   }
-  
+
   .certificate-name {
     font-size: var(--font-size-2xl);
     min-width: 12.5rem;
   }
-  
+
   .certificate-module {
     font-size: var(--font-size-lg);
   }
-  
+
   .certificate-content-inner {
     padding: var(--spacing-3);
   }
-  
+
   .certificate-logo img {
     height: 2.5rem;
   }
