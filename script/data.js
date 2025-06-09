@@ -5,7 +5,7 @@ const courseData = {
       id: 1,
       title: "Introdução à Preparação para Desastres",
       description: "Aprenda os fundamentos da preparação para desastres e o papel dos voluntários em situações de emergência.",
-      image: "img/defesa_civil_jpg.jpg", // Mantenha o nome do arquivo da imagem como está
+      image: "img/defesa_civil_png.png", // Mantenha o nome do arquivo da imagem como está
       lessons: [
         {
           id: 1,
